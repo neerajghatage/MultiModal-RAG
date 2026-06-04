@@ -1,0 +1,42 @@
+# Normalize all text files to LF on check-in
+* text=auto eol=lf
+
+# Python
+*.py text eol=lf
+
+# Web / JS
+*.js text eol=lf
+*.html text eol=lf
+*.htm text eol=lf
+*.css text eol=lf
+
+# Config / markup
+*.yaml text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.toml text eol=lf
+*.cfg text eol=lf
+*.ini text eol=lf
+.env text eol=lf
+
+# Shell scripts
+*.sh text eol=lf
+
+# Windows scripts — keep CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Binary — no conversion
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.gz binary
+*.pyc binary

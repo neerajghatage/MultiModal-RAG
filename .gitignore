@@ -1,0 +1,65 @@
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# ── Virtual environments ──────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Environment / secrets ─────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Build / dist ──────────────────────────────────────────────
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# ── Cache ─────────────────────────────────────────────────────
+.cache/
+*.cache
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# ── Jupyter notebooks ─────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Qdrant local storage ──────────────────────────────────────
+qdrant_storage/
+
+# ── Data folder (large documentation source files) ────────────
+data/
+
+# ── IDE / editor ──────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── OS ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Docker ────────────────────────────────────────────────────
+*.dockerignore
+
+# ── Logs ─────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Test coverage ─────────────────────────────────────────────
+.coverage
+htmlcov/
+coverage.xml

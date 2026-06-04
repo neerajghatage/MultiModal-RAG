@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: rag-system-config
+  namespace: rag-system
+  labels:
+    app.kubernetes.io/name: rag-system
+data:
+  # ── Qdrant ──
+  QDRANT_URL: "http://qdrant:6333"
+  QDRANT_COLLECTION_NAME: "rag_docs_v1"
+
+  # ── Redis (session store) ──
+  REDIS_URL: "redis://redis:6379"
+  SESSION_TTL: "3600"
+
+  # ── OpenAI model settings ──
+  OPENAI_MODEL: "gpt-4.1"
+  EMBEDDING_MODEL: "text-embedding-3-large"
+
+  # ── Azure OpenAI (non-sensitive) ──
+  AZURE_OPENAI_API_VERSION: "2025-01-01-preview"
+  AZURE_OPENAI_CHAT_DEPLOYMENT: "gpt-4.1"
+  AZURE_OPENAI_EMBEDDING_DEPLOYMENT: "text-embedding-3-large"
+
+  # ── Azure Blob Storage (non-sensitive) ──
+  AZURE_BLOB_CONTAINER_NAME: "rag-images"
+
+  # ── App settings ──
+  PROJECT_NAME: "DOC_RAG"
+  LOG_LEVEL: "INFO"
+  AUTH_ENABLED: "true"
+  CORS_ORIGINS: "*"
+
+  # ── ML Models (pre-baked in Docker image at build time) ──
+  ENABLE_RERANKER: "true"
+  ENABLE_SPARSE: "true"
+  RERANKER_MODEL: "Xenova/ms-marco-MiniLM-L-6-v2"

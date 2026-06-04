@@ -1,0 +1,52 @@
+# ── LangChain Framework ───────────────────────────────────────
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-openai>=0.3.0
+langchain-qdrant>=0.2.0
+langchain-core>=0.3.0
+langgraph>=0.2.0
+
+# ── Vector Database ───────────────────────────────────────────
+qdrant-client>=1.16.0
+
+# ── Hybrid Search & Reranking ────────────────────────────────
+fastembed>=0.4.0
+
+# ── OpenAI SDK (for summarizer / vision) ─────────────────────
+openai>=1.50.0
+
+# ── Document Processing ──────────────────────────────────────
+pypdf>=4.0.0
+python-docx>=0.8.11
+beautifulsoup4>=4.12.2
+lxml>=4.9.3
+
+# ── Excel Processing ─────────────────────────────────────────
+openpyxl>=3.1.0
+pandas>=2.1.3
+
+# ── Image Processing ─────────────────────────────────────────
+Pillow>=10.1.0
+
+# ── Azure Blob Storage (for images) ─────────────────────────
+azure-storage-blob>=12.19.0
+
+# ── Data Processing ──────────────────────────────────────────
+numpy>=1.26.0
+
+# ── Session Store ────────────────────────────────────────────
+redis[hiredis]>=5.0.0
+
+# ── API & Web ────────────────────────────────────────────────
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+
+# ── Authentication (JWT Bearer — aligned with RAG API) ──
+python-jose[cryptography]>=3.3.0
+httpx>=0.27.0
+
+# ── Environment ──────────────────────────────────────────────
+python-dotenv>=1.0.0
+
+# ── Progress bars ────────────────────────────────────────────
+tqdm>=4.66.0
